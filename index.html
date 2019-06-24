@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		
+		<!-- For IE 8 and older>
+		<!--[if lt IE 9]>
+            <script src="http://github.com/aFarkas/html5shiv/blob/master/dist/html5shiv.js"></script>
+        <![endif]-->
+		
+        <link rel="stylesheet" href="style.css" />
+		
+		<!-- For IE 7 and older>
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" href="style_ie.css" />
+        <![endif]-->
+		
+        <title>Yuuki</title>
+    </head>
+
+    <body>
+		<!-- Header -->
+        <header>
+			<div id="header-top">
+				<!-- Search form -->
+				<div id="search-form">
+					<form action="search.php" method="get">
+						<input type="text" name="q" id="q" class="search-field" placeholder="Find Product"/>
+						<input type="submit" class="search-button" id="seek" value="" />
+					</form>
+				</div>
+						
+				<!-- Right part of the header -->
+				<div id="header-right">	 	
+					<select id="language-switcher">
+						<option value="1">English</option>
+						<option value="2">Japanese</option>
+					</select>
+					<select id="currency-picker">
+						<option value="JPY" >JPY</option>
+						<option value="EUR" >EUR</option>
+						<option value="GBP" >GBP</option>
+						<option value="USD" >USD</option>
+					</select>
+					<a class="cart" href="#" title="Cart"></a>
+				</div>
+			</div>
+
+			<div id="menu">
+				<div id="menu-content">
+					<!-- Navigation -->
+					<label id="collapse" for="_1">
+						<img  id="menuphoto" src="images/menu.svg">
+					</label>
+					<input id="_1" type="checkbox" name="mycheckbox"/>
+					<ul id="mainmenu">
+						<li class="submenu">
+							<a href="#"" title="Top Seller">Top Seller</a>
+						</li>
+						<li class="submenu">
+							<a href="#" title="Category">Category</a>
+						</li>
+						<li class="submenu" id="logoset">
+							<a href="#">
+								<img id="logo" src="images/logo.png"/> <br/>
+							</a>
+						</li>
+						<li class="submenu">
+							<a href="#" title="Sale">Sale</a>
+						</li>
+						<li class="submenu">
+							<a href="#" title="Contact">Contact</a>
+						</li>
+					</ul>
+					<div id="mobilelogobox">
+						<a href="#">
+							<img id="mobilelogo" src="images/logo.svg"/> <br/>
+						</a>
+					</div>
+				</div>
+			</div>
+        </header>
+
+		<!-- Content -->
+		<div id="content">
+			<div id="slideshow1">
+				<div>
+					<a href="#"><img src="images/slide1.png"/></a>
+				</div>
+				<div>
+					<a href="#"><img src="images/slide2.png"/></a>
+				</div>
+				<div>
+					<a href="#"><img src="images/slide3.png"/></a>
+				</div>
+				<div>
+					<a href="#"><img src="images/slide4.png"/></a>
+				</div>
+				<div>
+					<a href="#"><img src="images/slide5.png"/></a>
+				</div>
+			</div>
+
+			<div id="home-featured">
+				<div class="wrapper">
+					<div class="section-header">
+						<h3>Featured Product</h3>
+					</div>
+					<div id="product-overview">
+						<div class="column">
+							<a href="#">
+								<div>
+									<img src="images/item1.jpg" class="photo" alt="Fate/Grand Order: Lancer/Jeanne D'arc Alter Santa Lily"/>
+								</div>
+								<div>
+									<div href="#" class="product-title">Fate/Grand Order: Lancer/Jeanne D'arc Alter Santa Lily</div>
+									<div class="product-price">
+										<span>&yen; 11,480</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="column">
+							<a href="#">
+								<div>
+									<img src="images/item2.jpg" class="photo" alt="TV Anime「 Yagate Kimi ni Naru 」Opening theme「 Kimi ni Furete 」 Single, Maxi"/>
+								</div>
+								<div>
+									<div href="#" class="product-title">TV Anime「 Yagate Kimi ni Naru 」Opening theme「 Kimi ni Furete 」 Single, Maxi</div>
+									<div class="product-price">
+										<span>&yen; 1,296</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="column">
+							<a href="#">
+								<div>
+									<img src="images/item3.jpg" class="photo" alt="「Genkijou-Ban Kancolle」Blu-ray Gentei shiyou"/>
+								</div>
+								<div>
+									<div href="#" class="product-title">「Genkijou-Ban Kancolle」Blu-ray Gentei shiyou</div>
+									<div class="product-price">
+										<span>&yen; 6,844</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="column">
+							<a href="#">
+								<div>
+									<img src="images/item4.jpg" class="photo" alt="THE IDOLM@STER CINDERELLA GIRLS MASTER SEASONS WINTER Single, Maxi"/>
+								</div>
+								<div>
+									<div href="#" class="product-title">THE IDOLM@STER CINDERELLA GIRLS MASTER SEASONS WINTER Single, Maxi</div>
+									<div class="product-price">
+										<span>&yen; 1,401</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="column" id="article5">
+							<a href="#">
+								<div>
+									<img src="images/item5.jpg" class="photo" alt="THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER 24 Trinity Field Single, Maxi"/>
+								</div>
+								<div>
+									<div href="#" class="product-title">THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER 24 Trinity Field Single, Maxi'<br/>Limited Edition</div>
+									<div class="product-price">
+										<span>&yen; 3,240</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="column">
+							<a href="#">
+								<div>
+									<img src="images/item6.jpg" class="photo" alt="THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER 15 桜の頃 Single, Maxi"/>
+								</div>
+								<div>
+									<div href="#" class="product-title">THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER 15 桜の頃 Single, Maxi</div>
+									<div class="product-price">
+										<span>&yen; 1,070</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="slideshow2">
+				<div>
+					<a href="#"><img src="images/slide6.png"/></a>
+				</div>
+				<div>
+					<a href="#"><img src="images/slide7.png"/></a>
+				</div>
+				<div>
+					<a href="#"><img src="images/slide8.png"/></a>
+				</div>
+			</div>
+
+			<div id="information">
+				<a href="#" class="shipping">
+					<div class="wrapper">
+						<div class="column">
+							<div class="icon" id="icon_shipping">
+								<img src="images/icon_shipping.svg" alt="Shipping"/>
+							</div>
+							<h2>We Ship Worldwide</h2>
+							<p>We ship worldwide on pretty much all <br/>our items. If not, we’ll state it on the <br/>product page.</p>
+						</div>
+						<div class="column">
+							<div class="icon" id="icon_free_shipping">
+								<img src="images/icon_free_shipping.svg" alt="Free Shipping"/>
+							</div>
+							<h2>Free Shipping</h2>
+							<p>On all Dutch orders over ￥7500<br>On all Japan orders over ￥15000<br/>On all Intercontinental orders over ￥20000</p>
+						</div>
+						<div class="column">
+							<div class="icon" id="icon_return">
+								<img src="images/icon_return.svg" alt="Return"/>
+							</div>
+							<h2>30 Day Returns</h2>
+							<p>We offer 30 days returns on all  items <br/>returned in original and re-sellable <br/>condition.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div id="home-collections">
+				<div class="wrapper">
+					<div class="section-header">
+						<h3>Other Product</h3>
+						<a href="#">Shop all products</a>
+					</div>
+
+					<div id="collection-overview">
+						<div class="collection_item">
+							<a href="#" title="Fate/Grand Order: Lancer/Kiyohime Swimming Ver 1/7">
+								<div>
+									<img src="images/kiyohi.jpg" class="photo" alt="￥ 13,460"/>
+								</div>
+								<div class="description">
+									￥ 13,460
+								</div>
+							</a>
+						</div>
+						<div class="collection_item">
+							<a href="#" title="Love Live Sunshine 2nd Season Blu-ray 2">
+								<div>
+									<img src="images/LLSunshineSS2.jpg" class="photo" alt="￥ 2,799"/>
+								</div>
+								<div class="description">
+									￥ 2,799
+								</div>
+							</a>
+						</div>
+						<div class="collection_item">
+							<a href="#" title="Japanese Destroyer IJN Amatsukaze 1/700">
+								<div>
+									<img src="images/IJN%20Amatsukaze.jpg" class="photo" alt="￥ 1,483"/>
+								</div>
+								<div class="description">
+									￥ 1,483
+								</div>
+							</a>
+						</div>
+						<div class="collection_item">
+							<a href="#" title="Kantai Collection - Kancolle - Prinz Eugen 1/8">
+								<div>
+									<img src="images/Prinz.jpg" class="photo" alt="￥ 17,000 "/>
+								</div>
+								<div class="description">
+									￥ 17,000
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="wrapper">
+                <div class="column">
+					<div class="icons" id="question"><img src="images/question.png"/></div>
+					<div class="text_footer">
+						<h4>Got any questions?</h4>
+						<p class="links">
+							<a href="mailto:dungnvgcd17172@fpt.edu.vn">dungnvgcd17172@fpt.edu.vn</a><br>
+							+ 84 35 70 57 725
+						</p>
+					</div>
+                </div>
+                <div class="column">
+                    <div class="icons" id="friend"><img src="images/friend.png"/></div>
+					<div class="text_footer">
+						<h4>Let's be friends...</h4>                    
+						<div id="social-links">
+							<a href="#" target="_blank" title="Facebook"><img src="images/facebook.png"/></a>
+							<a href="#" target="_blank" title="Twitter"><img src="images/twitter.png"/></a>
+							<a href="#" target="_blank" title="Tumblr"><img src="images/tumblr.png"/></a>
+							<a href="#" target="_blank" title="Instagram"><img src="images/instagram.png"/></a>
+						</div>   
+					</div>
+                </div>
+                <div class="column">
+                    <div class="icons" id="news"><img src="images/news.png"/></div>
+					<div class="text_footer">
+						<h4>Registration to get newsletter!</h4>
+						<form action="newsletter.php" method="post" id="subscribe-form" name="subscribe-form">
+							<input type="email" value="" name="mail" id="mail" placeholder="Enter your e-mail address"/><button type="submit" name="subscribe" id="subscribe">Sign up</button>
+						</form>
+					</div>
+                </div>
+				<hr>
+                <div class="column">
+					<div class="icons" id="visit"><img src="images/visit.png"/></div>
+					<div class="text_footer">
+						<h4>Visit our store</h4>                    
+						<p>
+							〒101-0021 1-14-7 Soto-Kanda<br/>
+							Takarada building<br/>
+							Chiyoda-ku, Tokyo<br/>
+							+ 84 12 147 10 13
+						</p>
+					</div>
+                </div>
+                <div class="column">
+					<div class="icons" id="navigate"><img src="images/navigate.png"/></div>
+					<div class="text_footer">
+						<h4>Navigate</h4> 
+						<p class="links">
+							<a href="#" title="Store" >Store</a><br/>
+							<a href="#" title="Blog" >Blog</a><br/>
+							<a href="#" title="Contact" >Contact</a>
+						</p>
+					</div>
+                </div>
+                <div class="column">
+					<div class="icons" id="gift"><img src="images/gift.png"/></div>
+					<div class="text_footer">
+						<h4>Gifts & Gift Cards</h4>
+						<p class="links">
+							<a href="#" title="Below ￥2500" >Below ￥2500</a><br/>
+							<a href="#" title="￥2500 to ￥7500" >￥2500 to ￥7500</a><br/>
+							<a href="#" title="￥7500 to ￥15000" >￥7500 to ￥15000</a><br/>
+							<a href="#" title="￥15000 and up" >￥15000 and up</a><br/>
+							<a href="#" title="Gift Cards" >Gift Cards</a>
+						</p>
+					</div>
+                </div>
+                <div class="column">    
+					<div class="icons" id="hour"><img src="images/hour.png"/></div>
+					<div class="text_footer">
+						<h4>Store Hours</h4>                   
+						<table>
+	                        <tbody>
+	                          	<tr>
+	                          		<td>Every Days</td>
+	                          		<td>08 - 22</td>
+	                          	</tr>
+	                        </tbody>
+                        </table>
+					</div>
+                </div>
+                <div class="column">
+					<div class="icons" id="customer"><img src="images/customer.png"/></div>
+					<div class="text_footer">
+						<h4>Customer Service</h4>
+						<p class="links">
+							<a href="#" title="Shipping & Returns" >Shipping & Returns</a><br/>		      
+							<a href="#" title="Gift Cards" >Gift Cards</a><br/>
+							<a href="#" title="Contact us" >Contact us</a>
+						</p>
+					</div>
+                </div>
+                <div class="column">
+					<div class="icons" id="payment"><img src="images/payment.png"/></div>
+					<div class="text_footer">
+						<h4>Payment Methods</h4>
+						<p>	
+							Visa, Mastercard, Japan Express<br/>
+							Paypal<br/>
+							iDEAL (Dutch payments only)<br/>
+							Bancontact / Mister Cash
+						</p>
+					</div>
+                </div>
+				<hr>        
+				<div id="footer_left">© Yuuki Tachibana - 2018</div>
+				<div id="footer_right">COC / KVK Nº: 14579171  •  VAT / BTW Nº: NL8542557129B01</div>
+
+			</div>
+                    
+		</footer>
+		
+        <script src="js/jquery-1.11.3.js"></script>
+		<script src="js/myscript.js"></script>	
+			
+    </body>
+</html>
